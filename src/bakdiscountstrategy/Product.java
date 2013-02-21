@@ -6,14 +6,14 @@ public class Product {
     private String productID;
     private double productPrice;
     private String description;
-    private DiscountStrategy DiscountStrategy;
+    private DiscountStrategy discountStrategy;
 
     //Product Constructor
-    public Product(String productID, double productPrice, String description, DiscountStrategy DiscountStrategy) {
+    public Product(String productID, String description, double productPrice, DiscountStrategy discountStrategy) {
         this.productID = productID;
-        this.productPrice = productPrice;
         this.description = description;
-        this.DiscountStrategy = DiscountStrategy;
+        this.productPrice = productPrice;
+        this.discountStrategy = discountStrategy;
     }
 
     //Getters and Setters
@@ -45,11 +45,14 @@ public class Product {
     }
 
     public bakdiscountstrategy.DiscountStrategy getDiscountStrategy() {
-        return DiscountStrategy;
+        return discountStrategy;
     }
 
     public void setDiscountStrategy(bakdiscountstrategy.DiscountStrategy DiscountStrategy) {
         //Needs Validation
-        this.DiscountStrategy = DiscountStrategy;
+        this.discountStrategy = DiscountStrategy;
+    }
+        public double getDiscount(int qty){
+        return (discountStrategy.getDiscountAmt(productPrice, qty));
     }
 }
