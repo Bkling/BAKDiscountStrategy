@@ -36,13 +36,17 @@ public class LineItem {
         //Needs Validation
         this.qty = qty;
     }
-    
+
     public String getDiscription() {
         return product.getDescription();
     }
-    
+
     public double getDiscount() {
         return (product.getDiscount(qty));
+    }
+
+    public double getProductAmount() {
+        return product.getProductPrice() * qty;
     }
 
     //Sorts through the Product Array
