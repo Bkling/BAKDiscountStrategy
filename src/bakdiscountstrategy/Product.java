@@ -52,7 +52,8 @@ public class Product {
         //Needs Validation
         this.discountStrategy = DiscountStrategy;
     }
-        public double getDiscount(int qty){
+
+    public double getDiscount(int qty) {
         return (discountStrategy.getDiscountAmt(productPrice, qty));
     }
 }
