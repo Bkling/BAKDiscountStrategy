@@ -84,8 +84,8 @@ public class Receipt {
             data += "Quantity: " + lineItems[i].getQty() + "\n";
             data += "Product Price: " + lineItems[i].getProductAmount() + "\n";
             data += "Discount Amount: " + lineItems[i].getDiscount() + "\n";
+            data += "--------------------------------------- \n";
         }
-        data += "------------------------------------------- \n";
         data += "Total Before Discount: " + getTotalBeforeDiscount() + "\n";
         data += "Money Saved With Discount: " + getTotalAfterDiscount() + "\n";
         double totalBill = getTotalBeforeDiscount() - getTotalAfterDiscount();
