@@ -19,38 +19,38 @@ public class LineItem {
         this.qty = qty;
     }
 
-    public String getProduct() {
+    public final String getProduct() {
         return (product.getProductID());
     }
 
-    public void setProduct(Product product) {
+    public final void setProduct(Product product) {
         //Needs Validation
         this.product = product;
     }
 
-    public int getQty() {
+    public final int getQty() {
         return qty;
     }
 
-    public void setQty(int qty) {
+    public final void setQty(int qty) {
         //Needs Validation
         this.qty = qty;
     }
 
-    public String getDiscription() {
+    public final String getDiscription() {
         return product.getDescription();
     }
 
-    public double getDiscount() {
+    public final double getDiscount() {
         return (product.getDiscount(qty));
     }
 
-    public double getProductAmount() {
+    public final double getProductAmount() {
         return product.getProductPrice() * qty;
     }
 
     //Sorts through the Product Array
-    public Product getProductID(String prodId) {
+    public final Product getProductID(String prodId) {
         Product product = null;
         for (Product p : products) {
             if (prodId.equals(p.getProductID())) {

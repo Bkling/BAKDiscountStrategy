@@ -17,43 +17,43 @@ public class Product {
     }
 
     //Getters and Setters
-    public String getProductID() {
+    public final String getProductID() {
         return productID;
     }
 
-    public void setProductID(String productID) {
+    public final void setProductID(String productID) {
         //Needs Validation
         this.productID = productID;
     }
 
-    public double getProductPrice() {
+    public final double getProductPrice() {
         return productPrice;
     }
 
-    public void setProductPrice(double productPrice) {
+    public final void setProductPrice(double productPrice) {
         //Needs Validation
         this.productPrice = productPrice;
     }
 
-    public String getDescription() {
+    public final String getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
+    public final void setDescription(String description) {
         //Needs Validation
         this.description = description;
     }
 
-    public bakdiscountstrategy.DiscountStrategy getDiscountStrategy() {
+    public final DiscountStrategy getDiscountStrategy() {
         return discountStrategy;
     }
 
-    public void setDiscountStrategy(bakdiscountstrategy.DiscountStrategy DiscountStrategy) {
+    public final void setDiscountStrategy(DiscountStrategy DiscountStrategy) {
         //Needs Validation
         this.discountStrategy = DiscountStrategy;
     }
 
-    public double getDiscount(int qty) {
+    public final double getDiscount(int qty) {
         return (discountStrategy.getDiscountAmt(productPrice, qty));
     }
 }

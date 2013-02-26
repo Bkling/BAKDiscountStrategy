@@ -19,7 +19,7 @@ public class Receipt {
     };
 
     //Sort through the Customer Array
-    public Customer getCustomer(String custID) {
+    public final Customer getCustomer(String custID) {
         Customer customer = null;
         for (Customer c : customers) {
             if (custID.equals(c.getCustID())) {
@@ -30,33 +30,33 @@ public class Receipt {
         return customer;
     }
 
-    public void setCustomer(Customer customer) {
+    public final void setCustomer(Customer customer) {
         //Needs Validation
         this.customer = customer;
     }
 
-    public LineItem[] getLineItems() {
+    public final LineItem[] getLineItems() {
         return lineItems;
     }
 
-    public void setLineItems(LineItem[] lineItems) {
+    public final void setLineItems(LineItem[] lineItems) {
         //Needs Validation
         this.lineItems = lineItems;
     }
 
-    public void addLineItem(String prodID, int qty) {
+    public final void addLineItem(String prodID, int qty) {
         LineItem item = new LineItem(prodID, qty);
         addItemToArray(item);
     }
 
-    private void addItemToArray(LineItem item) {
+    private final void addItemToArray(LineItem item) {
         LineItem[] tempItems = new LineItem[lineItems.length + 1];
         System.arraycopy(lineItems, 0, tempItems, 0, lineItems.length);
         tempItems[lineItems.length] = item;
         lineItems = tempItems;
     }
 
-    public double getTotalBeforeDiscount() {
+    public final double getTotalBeforeDiscount() {
         double total = 0.0;
         for (LineItem item : lineItems) {
             total += item.getProductAmount();
@@ -64,7 +64,7 @@ public class Receipt {
         return total;
     }
 
-    public double getTotalAfterDiscount() {
+    public final double getTotalAfterDiscount() {
         double total = 0.0;
         for (LineItem item : lineItems) {
             total += item.getDiscount();
@@ -72,7 +72,7 @@ public class Receipt {
         return total;
     }
 
-    public String getDisplay() {
+    public final String getDisplay() {
         String data;
         data = "Welcome to Kohl's. Expect Great Things \n";
         data += "------------------------------------------- \n";

@@ -5,15 +5,15 @@ public class CashRegister {
     //Properties of a Cash Register
     private Receipt receipt;
 
-    public void startNewSale(String custID) {
+    public final void startNewSale(String custID) {
         receipt = new Receipt(custID);
     }
 
-    public void addItemToSale(String prodID, int qty) {
+    public final void addItemToSale(String prodID, int qty) {
         receipt.addLineItem(prodID, qty);
     }
 
-    public void getOutput() {
+    public final void getOutput() {
         System.out.println(receipt.getDisplay());
     }
 }

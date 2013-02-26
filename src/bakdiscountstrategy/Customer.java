@@ -18,65 +18,65 @@ public class Customer {
     }
 
     //Getters and Setters for the properties
-    public String getCustID() {
+    public final String getCustID() {
         return custID;
     }
 
-    public void setCustID(String custID) {
+    public final void setCustID(String custID) {
         //Needs Validation
         this.custID = custID;
     }
 
-    public String getCustName() {
+    public final String getCustName() {
         return custName;
     }
 
-    public void setCustName(String custName) {
+    public final void setCustName(String custName) {
         //Needs Validation
         this.custName = custName;
     }
 
-    public String getPhone() {
+    public final String getPhone() {
         return phone;
     }
 
-    public void setPhone(String phone) {
+    public final void setPhone(String phone) {
         //Needs Validation
         this.phone = phone;
     }
 
-    public String getAddress() {
+    public final String getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    public final void setAddress(String address) {
         //Needs Validation
         this.address = address;
     }
 
-    public String getCity() {
+    public final String getCity() {
         return city;
     }
 
-    public void setCity(String city) {
+    public final void setCity(String city) {
         //Needs Validation
         this.city = city;
     }
 
-    public String getZip() {
+    public final String getZip() {
         return zip;
     }
 
-    public void setZip(String zip) {
+    public final void setZip(String zip) {
         //Needs Validation
         this.zip = zip;
     }
 
-    public String getState() {
+    public final String getState() {
         return state;
     }
 
-    public void setState(String state) {
+    public final void setState(String state) {
         //Needs Validation
         this.state = state;
     }
