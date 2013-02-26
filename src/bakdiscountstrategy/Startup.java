@@ -9,7 +9,8 @@ public class Startup {
         cr.startNewSale("6175");
         //Add and Item to the Sale
         cr.addItemToSale("AC130", 1);
-        cr.addItemToSale("B23R", 2);
+        cr.addItemToSale("B23R", 1);
+        cr.addItemToSale("M216", 2);
         //Display the Receipt
         cr.getOutput();
     }
