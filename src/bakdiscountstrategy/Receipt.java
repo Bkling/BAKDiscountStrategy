@@ -93,7 +93,7 @@ public class Receipt {
         data += "Date of Purchase: " + formattedDate + "\n";
         data += "------------------------------------------- \n";
         for (int i = 0; i < lineItems.length; i++) {
-            data += "Item Name: " + lineItems[i].getDiscription() + "\n";
+            data += "Item Name: " + lineItems[i].getDescription() + "\n";
             data += "Item Number: " + lineItems[i].getProduct() + "\n";
             data += "Quantity: " + lineItems[i].getQty() + "\n";
             data += "Product Price: " + lineItems[i].getProductAmount() + "\n";
