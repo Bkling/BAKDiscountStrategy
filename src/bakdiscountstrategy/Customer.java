@@ -3,7 +3,7 @@ package bakdiscountstrategy;
 /**
  * This is partial class that represents a customer of a business.
  *
- * @author Benjamin Kling, bkling@my.wctc.edu version 1.00
+ * @author Benjamin Kling, bkling@my.wctc.edu, version 1.00
  */
 public class Customer {
 
