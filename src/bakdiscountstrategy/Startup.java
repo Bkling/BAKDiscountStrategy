@@ -1,11 +1,15 @@
 package bakdiscountstrategy;
+
 /**
  * This class represents the start up of a sale.
- * @author Benjamin Kling, bkling@my.wctc.edu
- * version 1.00
+ *
+ * @author Benjamin Kling, bkling@my.wctc.edu, version 1.00
  */
 public class Startup {
-
+/**
+ * This method is the start up of the project
+ * @param args - uses args to run program
+ */
     public static void main(String[] args) {
         //Create a CashRegister Object
         CashRegister cr = new CashRegister();
