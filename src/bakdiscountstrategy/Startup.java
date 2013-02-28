@@ -1,5 +1,9 @@
 package bakdiscountstrategy;
-
+/**
+ * This class represents the start up of a sale.
+ * @author Benjamin Kling, bkling@my.wctc.edu
+ * version 1.00
+ */
 public class Startup {
 
     public static void main(String[] args) {

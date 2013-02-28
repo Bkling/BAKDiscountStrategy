@@ -1,5 +1,9 @@
 package bakdiscountstrategy;
-
+/**
+ * This class represents a line item in a receipt class.
+ * @author Benjamin Kling, bkling@my.wctc.edu
+ * version 1.00
+ */
 public class LineItem {
 
     //Properties of a line item

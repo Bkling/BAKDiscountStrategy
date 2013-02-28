@@ -1,5 +1,9 @@
 package bakdiscountstrategy;
-
+/**
+ * This class implements the discount strategy.
+ * @author Benjamin Kling, bkling@my.wctc.edu
+ * version 1.00
+ */
 public class WinterDiscountStrategy implements DiscountStrategy {
 
     //The winter percentage

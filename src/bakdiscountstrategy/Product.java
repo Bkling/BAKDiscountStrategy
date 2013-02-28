@@ -1,5 +1,9 @@
 package bakdiscountstrategy;
-
+/**
+ * This class represents a product that a business would sell.
+ * @author Benjamin Kling, bkling@my.wctc.edu
+ * version 1.00
+ */
 public class Product {
 
     //Properties of a product
